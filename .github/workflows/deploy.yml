@@ -26,6 +26,13 @@ jobs:
       - name: Validate SAM template
         run: sam validate --template-file sentiment-demo/template.yaml
       
+      - name: Install cfn-lint
+        run: pip install cfn-lint
+
+      - name: Lint CloudFormation template
+        run: cfn-lint sentiment-demo/template.yaml
+  
+
       - name: Deploy SAM app
         run: |
           sam deploy \
