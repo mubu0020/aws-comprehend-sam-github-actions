@@ -1,0 +1,64 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# AWS SAM
+# =========================
+.aws-sam/
+
+# SAM build artifacts
+sam-installation/
+
+# =========================
+# AWS CLI
+# =========================
+.aws/
+awscliv2.zip
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# AWS SAM installer
+aws-sam-cli-linux-x86_64.zip
+sam-installation/
+
+# AWS CLI installer
+awscliv2.zip
