@@ -22,7 +22,10 @@ jobs:
 
       - name: Bygg SAM app
         run: sam build --use-container --template-file sentiment-demo/template.yaml
-
+      
+      - name: Validate SAM template
+        run: sam validate --template-file sentiment-demo/template.yaml
+      
       - name: Deploy SAM app
         run: |
           sam deploy \
