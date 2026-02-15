@@ -32,7 +32,14 @@ jobs:
       - name: Lint CloudFormation template
         run: cfn-lint sentiment-demo/template.yaml
   
+      - name: Install test dependencies
+        run: pip install pytest
 
+      - name: Run tests
+        run: |
+          cd sentiment-demo
+          pytest
+      
       - name: Deploy SAM app
         run: |
           sam deploy \
